@@ -1,0 +1,42 @@
+﻿<!-- Giao dien sau khi nguoi dung da dang nhap-->
+@{
+    Layout = null;
+}
+
+<!doctype html>
+<html>
+<head>
+    <meta http-equiv="Content-Type" charset="utf-8" content="text/html">
+    <title>Ứng dụng trao đổi và mua bán máy tính xách tay đã qua sử dụng</title>
+    <link rel="stylesheet" href="~/Content/CSS/styleAfterLogin.css" type="text/css" />
+</head>
+<body>
+    <div id="open">
+        <div id="left">
+            <p>
+                Ứng dụng trao đổi và mua bán máy tính xách tay đã qua sử dụng
+            </p>
+        </div>
+        <div id="right">
+           <p id="report">
+              Bạn đã đăng nhập thành công
+           </p>
+           <p>@Html.ActionLink("Đăng xuất","IndexTrangChu","Logout")</p>
+        </div>
+    </div>
+    <div id="main">
+        <div id="sp1">
+            
+            <button id="btndangnhap">
+                <p>@Html.ActionLink("Đăng sản phẩm", "ThemSanPham", "DangSanPham")</p>
+            </button>
+           
+        </div>
+        <div id="sp2"></div>
+        <div id="sp3">
+            <p id="note">Mặt hàng được đăng gần đây</p>
+        </div>
+    </div>
+
+</body>
+</html>

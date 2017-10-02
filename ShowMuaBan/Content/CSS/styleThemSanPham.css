@@ -1,0 +1,7 @@
+﻿.form-group {
+   display: inline-block;
+}
+.col-md-10{
+    float:right;
+    margin-left: 10px;
+}

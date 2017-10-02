@@ -1,0 +1,40 @@
+﻿
+@model ShowMuaBan.Models.Account
+@{
+    Layout = null;
+}
+
+@{ 
+    <script src="~/Scripts/jquery-1.10.2.min.js"></script>
+    <script src="~/Scripts/jquery.validate.min.js"></script>
+    <script src="~/Scripts/jquery.validate.unobtrusive.js"></script>
+    <script src="~/Content/bootstrap.css"></script>
+}
+<!DOCTYPE html>
+
+<html>
+<head>
+    <meta name="viewport" content="width=device-width" />
+    <title>ThemSanPham</title>
+    <link href="~/Content/CSS/styleThemSanPham.css" rel="stylesheet"/>
+</head>
+<body>
+    @using (Html.BeginForm())
+    {
+        @Html.AntiForgeryToken()
+
+        <div class="form-horizontal" >
+            <hr />
+            @Html.ValidationSummary(true)
+
+            <div class="form-group">
+                @Html.LabelFor(model => model.HoTen , new { @class = "control-label col-md-2"})
+                <div class="col-md-10">
+                    @Html.EditorFor(model => model.HoTen )
+                    @Html.ValidationMessageFor(model => model.HoTen)
+                </div>
+            </div>
+        </div>
+    }
+</body>
+</html>

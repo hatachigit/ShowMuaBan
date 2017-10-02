@@ -1,0 +1,78 @@
+﻿#open div{
+	display: inline-block;
+	
+}
+div#left {
+	width: 82%;
+	float:left;
+	background-color : yellowgreen;
+	height: 80px;
+}
+#left p {
+	font-size: 25px;
+	margin-top: 5px;
+	text-align: center;
+	font-weight: bolder;
+	color: white;
+}
+div#right {
+	background-color: aqua;
+	width: 18%;
+	height: 80px;
+}
+#report {
+    padding-right: 0;
+    margin-left: 22px;
+    text-align: justify;
+}
+
+#menu {
+	margin: 10px;
+	padding-left:  0;
+	padding-right: 0;
+}
+
+
+
+#open {
+	width: 100%;
+	height: 50px;
+	
+}
+
+#main {
+	width: 100%;
+	height: 1000px;
+	background-color: #746263;
+	border-radius: 10px;
+}
+div#main {
+    display: inline-block;
+}
+#sp1 {
+    width: 15%;
+    height: 1000px;
+    background-color: red;
+    float: left;
+}
+#btndangnhap {
+    width: 100%;
+}
+
+#sp2 {
+    width: 67%;
+    height: 1000px;
+    background-color: blue;
+    float: left;
+}
+#sp3 {
+    width: 18%;
+    height: 1000px;
+    background-color: green;
+    float: left;
+}
+#note  {
+    text-align: justify;
+    padding-right: 0px;
+    margin-left: 25px;
+}
