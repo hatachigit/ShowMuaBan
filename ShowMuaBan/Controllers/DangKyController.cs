@@ -6,7 +6,7 @@ using System.Web.Mvc;
 
 namespace ShowMuaBan.Controllers
 {
-    public class SigninController : Controller
+    public class DangKyController : Controller
     {
         // GET: Signin
         public ActionResult FormDangKy()

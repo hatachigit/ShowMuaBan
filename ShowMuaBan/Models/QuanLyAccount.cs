@@ -13,7 +13,7 @@ namespace ShowMuaBan.Models
         {
 
         }
-        public DbSet<Account> Accounts { get; set; }
+        public DbSet<TaiKhoan> Accounts { get; set; }
         public DbSet<DanhMuc> DanhMucs { get; set; }
     }
 }

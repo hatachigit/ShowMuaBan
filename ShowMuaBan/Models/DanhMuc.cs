@@ -24,7 +24,7 @@ namespace ShowMuaBan.Models
         public DateTime NgayDangSP { get; set; }
 
         //
-        public virtual Account Account { get; set; }
+        public virtual TaiKhoan Account { get; set; }
 
     }
 }

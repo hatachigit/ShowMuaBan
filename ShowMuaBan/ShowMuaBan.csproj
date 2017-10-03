@@ -201,7 +201,7 @@
     <Compile Include="Controllers\LoginController.cs" />
     <Compile Include="Controllers\LogoutController.cs" />
     <Compile Include="Controllers\ManageController.cs" />
-    <Compile Include="Controllers\SigninController.cs" />
+    <Compile Include="Controllers\DangKyController.cs" />
     <Compile Include="Controllers\TrangChuController.cs" />
     <Compile Include="Global.asax.cs">
       <DependentUpon>Global.asax</DependentUpon>
@@ -212,7 +212,7 @@
     </Compile>
     <Compile Include="Migrations\Configuration.cs" />
     <Compile Include="Models\AccountViewModels.cs" />
-    <Compile Include="Models\Account.cs" />
+    <Compile Include="Models\TaiKhoan.cs" />
     <Compile Include="Models\DanhMuc.cs" />
     <Compile Include="Models\IdentityModels.cs" />
     <Compile Include="Models\ManageViewModels.cs" />
@@ -289,11 +289,12 @@
     <Content Include="Views\TrangChu\demo.cshtml" />
     <Content Include="Views\Login\AfterLogin.cshtml" />
     <Content Include="Views\Logout\IndexTrangChu.cshtml" />
-    <Content Include="Views\Signin\FormDangKy.cshtml" />
+    <Content Include="Views\DangKy\FormDangKy.cshtml" />
     <Content Include="Views\Login\DangNhapUI.cshtml" />
     <Content Include="Views\DangSanPham\ThemSanPham.cshtml" />
     <Content Include="Views\Shared\_myLayout.cshtml" />
     <Content Include="Views\DangSanPham\View.cshtml" />
+    <Content Include="Views\Login\DangNhap.cshtml" />
   </ItemGroup>
   <ItemGroup>
     <EmbeddedResource Include="Migrations\201709271525265_chinhsuaAccount.resx">

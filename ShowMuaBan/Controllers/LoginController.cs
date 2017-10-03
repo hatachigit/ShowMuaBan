@@ -13,5 +13,9 @@ namespace ShowMuaBan.Controllers
         {
             return View();
         }
+        public ActionResult DangNhap()
+        {
+            return View();
+        }
     }
 }
