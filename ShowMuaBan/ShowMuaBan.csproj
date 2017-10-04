@@ -295,6 +295,7 @@
     <Content Include="Views\Shared\_myLayout.cshtml" />
     <Content Include="Views\DangSanPham\View.cshtml" />
     <Content Include="Views\Login\DangNhap.cshtml" />
+    <Content Include="Views\DangKy\DangKy.cshtml" />
   </ItemGroup>
   <ItemGroup>
     <EmbeddedResource Include="Migrations\201709271525265_chinhsuaAccount.resx">
