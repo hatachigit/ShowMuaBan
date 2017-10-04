@@ -12,16 +12,17 @@ namespace ShowMuaBan.Models
         [Key]
         public int NguoiDangId { get; set; }
 
-        [Required]
+        [Required(ErrorMessage = "Phải điền nhãn hiệu")]
         [StringLength(10)]
         [Display(Name ="Nhãn hiệu")]
         public string NhanHieu { get; set; }
 
-        [Required]
+        [Required(ErrorMessage ="Phải điền tên sản phẩm")]
         [StringLength(50)]
         [Display(Name ="Tên sản phẩm")]
         public string TenSanPham { get; set; }
 
+        [Required(ErrorMessage = "Phải điền ngày đăng vào")]
         [Display(Name = "Ngày đăng")]
         public DateTime NgayDangSP { get; set; }
 
