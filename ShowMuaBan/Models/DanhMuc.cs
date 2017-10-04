@@ -14,13 +14,15 @@ namespace ShowMuaBan.Models
 
         [Required]
         [StringLength(10)]
+        [Display(Name ="Nhãn hiệu")]
         public string NhanHieu { get; set; }
 
         [Required]
         [StringLength(50)]
+        [Display(Name ="Tên sản phẩm")]
         public string TenSanPham { get; set; }
 
-
+        [Display(Name = "Ngày đăng")]
         public DateTime NgayDangSP { get; set; }
 
         //
