@@ -1,6 +1,7 @@
 ﻿
 @{
-    Layout = null;
+    ViewBag.Title = "Giao diện trang chủ";
+    Layout = "~/Views/Shared/_myLayout.cshtml";
 }
 
 <!doctype html>
@@ -17,14 +18,7 @@
                 Ứng dụng trao đổi và mua bán máy tính xách tay đã qua sử dụng
             </p>
         </div>
-        <div id="right">
-            <nav>
-                <ul id="menu">
-                   <li>@Html.ActionLink("Đăng nhập","AfterLogin","Login")</li>
-                   <li>@Html.ActionLink("Đăng ký","FormDangKy","Signin")</li>
-                </ul>
-            </nav>
-        </div>
+   
     </div>
     <div id="main">
         <div id="sp1">

@@ -1,27 +1,20 @@
 ﻿@using ShowMuaBan.Models
-@model ShowMuaBan.Models.DanhMuc
-
+@model ShowMuaBan.ViewModels.DanhMucViewModel
 
 @{
     ViewBag.Title = "Giao diện đăng sản phẩm của người dùng";
     Layout = "~/Views/Shared/_myLayout.cshtml";
 }
 
-@{ 
-    <script src="~/Scripts/jquery-1.10.2.min.js"></script>
-    <script src="~/Scripts/jquery.validate.min.js"></script>
-    <script src="~/Scripts/jquery.validate.unobtrusive.js"></script>
-    <script src="~/Content/bootstrap.css"></script>
-}
 
 <div class="row">
     <div class="col-md-10">
-        @using (Html.BeginForm())
+        @using (Html.BeginForm("ThemSanPham", "DangSanPham"))
         {
             @Html.AntiForgeryToken()
 
 
-            <div class="form-horizontal">
+
                 <hr />
                 @Html.ValidationSummary(true)
 
@@ -29,7 +22,7 @@
                     @Html.LabelFor(model => model.NhanHieu, new { @class = "control-label col-md-2" })
                     <div class="col-md-5">
                         @Html.EditorFor(model => model.NhanHieu)
-                        @Html.ValidationMessageFor(model => model.NhanHieu)
+                        @Html.TextBoxFor(model => model.NhanHieu)
                     </div>
                 </div>
 
@@ -37,15 +30,15 @@
                     @Html.LabelFor(model => model.TenSanPham, new { @class = "control-label col-md-2" })
                     <div class="col-md-5">
                         @Html.EditorFor(model => model.TenSanPham)
-                        @Html.ValidationMessageFor(model => model.TenSanPham)
+                        @Html.TextBoxFor(model => model.TenSanPham)
                     </div>
                 </div>
 
                 <div class="form-group">
-                    @Html.LabelFor(model => model.NgayDangSP, new { @class = "control-label col-md-2" })
+                    @Html.LabelFor(model => model.Date, new { @class = "control-label col-md-2" })
                     <div class="col-md-5">
-                        @Html.EditorFor(model => model.NgayDangSP)
-                        @Html.ValidationMessageFor(model => model.NgayDangSP)
+                        @Html.EditorFor(model => model.Date)
+                        @Html.ValidationMessageFor(model => model.Date)
                     </div>
                 </div>
 
@@ -54,11 +47,15 @@
                         <input type="submit" value="Lưu lại" class="btn btn-default" />
                     </div>
                 </div>
-            </div>
 
         }
+
     </div>
 </div>
+@section scripts{
+    @Scripts.Render("~/bundles/jqueryval");
+}        
+
 
 
 

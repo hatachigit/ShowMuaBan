@@ -20,6 +20,8 @@ namespace ShowMuaBan.Models
 
     public class ApplicationDbContext : IdentityDbContext<ApplicationUser>
     {
+        public DbSet<DanhMuc> DanhMucs { get; set; }
+       
         public ApplicationDbContext()
             : base("DefaultConnection", throwIfV1Schema: false)
         {

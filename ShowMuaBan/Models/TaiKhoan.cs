@@ -10,8 +10,16 @@ namespace ShowMuaBan.Models
     public class TaiKhoan
     {
         [Key]
+        [Display(Name = "Id người đăng")]
         [Column(Order =1)]
-        public int UserId { get; set; }
+        public int NguoiDangId { get; set; }
+
+        [Key]
+        [Column(Order = 2)]
+        [StringLength(50)]
+        [Required]
+        [Display(Name = "Họ tên người đăng")]
+        public string HoTen { get; set; }
 
         [Required]
         [Display(Name = "Tên đăng nhập")]
@@ -26,11 +34,7 @@ namespace ShowMuaBan.Models
         [Display(Name = "Ghi nhớ thông tin?")]
         public bool RememberMe { get; set; }
 
-        [Key]
-        [Column(Order = 2)]
-        [StringLength(50)]
-        [Required]
-        public string HoTen { get; set; }
+       
 
         public DateTime NgaySinh { get; set; }
 
